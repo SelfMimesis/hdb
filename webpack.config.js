@@ -83,7 +83,7 @@ module.exports = {
                 }
             },
             {
-                test: /\.css$/,
+               test: /\.scss$/,
                 use: [
                     {
                         loader: MiniCssExtractPlugin.loader,
@@ -91,6 +91,7 @@ module.exports = {
                             publicPath:''
                             }
                         },
+
                         {
                             loader: 'css-loader',
                         },

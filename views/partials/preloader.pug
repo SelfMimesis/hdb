@@ -1,0 +1,13 @@
+.preloader
+  p.preloader_text!=preloader.data.title.replace(/\n/g, '<br>')
+
+
+  .preloader_number 0%
+
+
+//- The value of a string property that you receive from Prismic would look like this:
+//- "Paragraph 1\n\nParagraph 2\n\nParagraph3". As you may already know, \n is a newline character, and if you do not convert it to a line break element (<br />), the browser would display \n as is.
+
+//- /\n/g is basically a regular expression. It normally starts and ends with slashes like this: / /. That expression means to match the newline character (\n) for all of the newline occurrences in the string (hence the global flag g toward the end).
+
+//- If you do not want to replace those characters, you can use CSS white-space: pre-wrap; on your text element
