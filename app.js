@@ -19,7 +19,7 @@ app.use(bodyParser.urlencoded({extended: false}))
 app.use(methodOverride())
 app.use(express.static(path.join(__dirname, 'public,')))
 
-
+app.use(express.static('public'))
 
 const Prismic = require('@prismicio/client');
 const PrismicDOM = require('prismic-dom');
@@ -152,8 +152,11 @@ app.get('/detail/:uid', async (req, res) => {
   const product = await api.getByUID('product', req.params.uid, {
     fetchLinks: 'collection.title'
   })
-
-  console.log(product)
+  console.log('holamundo')
+  console.log('holamundo')
+  console.log(product.data.title[0].text)
+  console.log('holamundo')
+console.log('holamundo')
   res.render('pages/detail',{
     ...defaults,
     product
