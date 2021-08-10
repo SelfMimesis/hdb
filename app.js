@@ -154,7 +154,7 @@ app.get('/detail/:uid', async (req, res) => {
   })
   console.log('holamundo')
   console.log('holamundo')
-  console.log(product.data.title[0].text)
+  console.log(product.data.informations[0].informations_label)
   console.log('holamundo')
 console.log('holamundo')
   res.render('pages/detail',{

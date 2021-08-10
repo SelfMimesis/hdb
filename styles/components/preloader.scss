@@ -1,12 +1,13 @@
 .preloader{
-  // @extend %cover;
+  @extend %cover;
+  @extend %center;
   // background: $color-contessa ;
   color: $color-white;
 background-color: yellowgreen;
-  align-items:center;
+
   // display: flex;
   display:none;
-  justify-content: center;
+
   text-align: center;
 }
 .preloader_text{

@@ -1,3 +1,5 @@
+@import './base/reset';
+
 @import './utils/variables';
 @import './utils/functions';
 @import './utils/mixins';
@@ -9,17 +11,12 @@
 
 @import './base/fonts';
 @import './base/base';
-@import './base/reset';
 
 @import './components/preloader';
 
 @import './pages/home/home';
 
-
 @import './pages/about/about';
-@import './pages/about/content';
-@import './pages/about/gallery';
-@import './pages/about/highlight';
 
 @import './pages/collections/collections';
 

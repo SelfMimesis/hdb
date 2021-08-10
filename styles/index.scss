@@ -8,12 +8,11 @@
 @import './shared/titles';
 
 @import './base/fonts';
-@import './base/base';
 @import './base/reset';
+@import './base/base';
 
 @import './components/preloader';
 
-@import './pages/home/home';
 
 
 @import './pages/about/about';
@@ -23,8 +22,10 @@
 
 @import './pages/collections/collections';
 
-@import './details/details';
+@import './pages/details/details';
 
+
+@import './pages/home/home';
 
 
 
